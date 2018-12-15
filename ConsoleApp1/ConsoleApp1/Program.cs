@@ -9,21 +9,15 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             string line = Console.ReadLine();
-            while (line != "e")
+            if (line == "y")
             {
-                if (line == "y")
-                {
-                    Console.WriteLine("Yes");
-                }
-                else
-                {
-                    Console.WriteLine("No");
-                }
-                line = Console.ReadLine();
-            } 
-            
-
-            
+                Console.WriteLine("Yes");
+            }
+            else
+            {
+                Console.WriteLine("No");
+            }
+            line = Console.ReadLine();
             Console.ReadLine();
 
         }
@@ -32,6 +26,5 @@ namespace ConsoleApp1
 
 
 
-    
 
-    
+
