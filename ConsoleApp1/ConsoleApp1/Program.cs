@@ -8,19 +8,20 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            string line = Console.ReadLine();
-            if (line == "y")
+            int index = 0;
+
+            for (int i = 0; i < 11; i++)
             {
-                Console.WriteLine("Yes");
+                for (int j = 0; j < 11; j++)
+                {
+                    string s = i + "*" + j+ "=" + i*j;
+                    Console.WriteLine(s);
+                }
             }
-            else
-            {
-                Console.WriteLine("No");
-            }
-            line = Console.ReadLine();
-            Console.ReadLine();
 
         }
+       
+        Console.ReadeLine();
     }
 }
 
